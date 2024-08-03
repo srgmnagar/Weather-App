@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="card">
+      <header>
+        <input
+          class="header__searchbar"
+          type="text"
+          placeholder="Enter your city"
+        />
+        <img class="header__search" src="search.png" alt="" />
+        <img class="header__fav" src="fav.png" alt="" />
+      </header>
+      <main>
+        <div class="main__temp">
+          <img src="rain.png" alt="" class="main__img" />
+          <h1 class="main__temperature">23°C</h1>
+          <div style="display: flex; gap: 1rem;align-items: center;">
+            <h2 class="main__city">Mumbai</h2>
+            <img class="favourite" src="favourite.png" alt="">
+          </div>
+          
+          <div class="main__buttons">
+            <button class="main__celc">°C</button>
+            <button class="main__ferh">°F</button>
+          </div>
+        </div>
+        <div class="main__weather">
+          <div class="main__minmax">
+            <div>
+              <h2 >Min Temp:</h2>
+              <h1 class="min">20°C</h1>
+            </div>
+            <div>
+                <h2 >Max Temp:</h2>
+                <h1 class="max">25°C</h1>
+              </div>
+          </div>
+          <div class="main__box">
+            <img src="humidity.png" alt="" class="img">
+            <div class="flex">
+              <h1 class="humid">83%</h1>
+              <h2>Humidity</h2>
+            </div>
+          </div>
+          <div class="main__box">
+            <img src="wind.png" alt="" class="img_wind">
+            <div class="flex">
+              <h1 class="wind">83km/hr</h1>
+              <h2>Wind Speed</h2>
+            </div>
+          </div>
+        </div>
+      </main>
+      <section>
+        <!-- <div class="section__card">
+          <h1 class="section__city"></h1>
+          <h1 class="section__temp"></h1>
+        </div> -->
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
